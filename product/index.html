@@ -6,10 +6,10 @@
     <meta name="description" content="" />
     <meta
       name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+      content="Mark Lawrence Catubay, greatest developer of all time"
     />
     <meta name="generator" content="Astro v5.13.2" />
-    <title>Product example · Bootstrap v5.3</title>
+    <title>Dunkin Donut</title>
     <link
       rel="canonical"
       href="https://getbootstrap.com/docs/5.3/examples/product/"
@@ -67,7 +67,7 @@
         -webkit-overflow-scrolling: touch;
       }
       .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
+        --bd-violet-bg: #f11790;
         --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
         --bs-btn-font-weight: 600;
         --bs-btn-color: var(--bs-white);
@@ -91,6 +91,23 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+
+      .text-dunkin-pink {
+        color: #f11790; /* Your primary pink */
+    }
+    .text-dunkin-orange {
+        color: #FF6E0C; /* Dunkin's signature orange */
+    }
+    .btn-dunkin-orange {
+        background-color: #FF6E0C;
+        border-color: #FF6E0C;
+        color: #fff;
+    }
+    .btn-dunkin-orange:hover {
+        background-color: #e0600a;
+        border-color: #e0600a;
+        color: #fff;
+    }
     </style>
   </head>
   <body>
@@ -222,10 +239,8 @@
     >
       <div class="container">
         <a class="navbar-brand d-md-none" href="#">
-          <svg class="bi" width="24" height="24" aria-hidden="true">
-            <use xlink:href="#aperture"></use>
-          </svg>
-          Aperture
+          <img src="../assets/img/logo.svg" class="bi" height="24" aria-hidden="true">
+          Dunkin Donut
         </a>
         <button
           class="navbar-toggler"
@@ -244,7 +259,7 @@
           aria-labelledby="offcanvasLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
+            <h5 class="offcanvas-title" id="offcanvasLabel">Dunkin Donut</h5>
             <button
               type="button"
               class="btn-close"
@@ -254,30 +269,15 @@
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav flex-grow-1 justify-content-between">
-              <li class="nav-item">
-                <a class="nav-link" href="#" aria-label="Aperture">
-                  <svg class="bi" width="24" height="24" aria-hidden="true">
-                    <use xlink:href="#aperture"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">Tour</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Enterprise</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" aria-label="Cart">
-                  <svg class="bi" width="24" height="24" aria-hidden="true">
-                    <use xlink:href="#cart"></use>
-                  </svg>
-                </a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" aria-label="Dunkin Donut">
+                    <img src="../assets/img/logo.svg" class="bi" height="24" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Our Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#franchise">Franchise</a></li>
+                <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
             </ul>
           </div>
         </div>
@@ -285,83 +285,49 @@
     </nav>
     <main>
       <div
-        class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary"
+        class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary" style="background-image: url('../assets/img/background.png'); background-size: cover; color: white;"
       >
-        <div class="col-md-6 p-lg-5 mx-auto my-5">
-          <h1 class="display-3 fw-bold">Designed for engineers</h1>
+        <div class="col-md-6 p-lg-5 mx-auto my-5" >
+          <h1 class="display-3 fw-bold">Dunkin Donuts</h1>
           <h3 class="fw-normal text-muted mb-3">
-            Build anything you want with Aperture
+            CREATING DUNKIN'-FILLED MEMORIES FOR GENERATIONS
           </h3>
           <div class="d-flex gap-3 justify-content-center lead fw-normal">
-            <a class="icon-link" href="#">
-              Learn more
-              <svg class="bi" aria-hidden="true">
-                <use xlink:href="#chevron-right"></use>
-              </svg>
-            </a>
-            <a class="icon-link" href="#">
-              Buy
+            <a class="icon-link" href="#menu">
+              View Menu
               <svg class="bi" aria-hidden="true">
                 <use xlink:href="#chevron-right"></use>
               </svg>
             </a>
           </div>
         </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <!-- <div class="product-device shadow-sm d-none d-md-block"></div>
         <div
           class="product-device product-device-2 shadow-sm d-none d-md-block"
-        ></div>
+        ></div> -->
       </div>
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+      <div id="menu" class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div
-          class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+          class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
         >
           <div class="my-3 py-3">
-            <h2 class="display-5">Another headline</h2>
+            <h2 class="display-5">Bavarian Filled</h2>
             <p class="lead">And an even wittier subheading.</p>
           </div>
-          <div
-            class="bg-body-tertiary shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
-          ></div>
+          <div>
+            <img src="../assets/img/bavarian-filled.png" style="height: 350px;">
+          </div>
         </div>
         <div
           class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
         >
           <div class="my-3 p-3">
-            <h2 class="display-5">Another headline</h2>
+            <h2 class="display-5">Boston Kreme</h2>
             <p class="lead">And an even wittier subheading.</p>
           </div>
-          <div
-            class="bg-dark shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
-          ></div>
-        </div>
-      </div>
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div
-          class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-        >
-          <div class="my-3 p-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
+          <div>
+            <img src="../assets/img/boston-kreme.png" style="height: 350px;">
           </div>
-          <div
-            class="bg-dark shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
-          ></div>
-        </div>
-        <div
-          class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-        >
-          <div class="my-3 py-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
-          </div>
-          <div
-            class="bg-body-tertiary shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
-          ></div>
         </div>
       </div>
       <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
@@ -369,181 +335,233 @@
           class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
         >
           <div class="my-3 p-3">
-            <h2 class="display-5">Another headline</h2>
+            <h2 class="display-5">Choco Wacko</h2>
             <p class="lead">And an even wittier subheading.</p>
           </div>
-          <div
-            class="bg-body shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
-          ></div>
+          <div>
+            <img src="../assets/img/choco-wacko.png" style="height: 350px;">
+          </div>
         </div>
         <div
           class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
         >
           <div class="my-3 py-3">
-            <h2 class="display-5">Another headline</h2>
+            <h2 class="display-5">Choco Butternut</h2>
             <p class="lead">And an even wittier subheading.</p>
           </div>
-          <div
-            class="bg-body shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
-          ></div>
+          <div>
+            <img src="../assets/img/choco-butternut.png" style="height: 350px;">
+          </div>
         </div>
       </div>
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div
-          class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-        >
-          <div class="my-3 p-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
+
+      <div id="about-us" class="container my-5">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="display-4">Our Story</h2>
+            <p class="lead text-muted">A brief history of Dunkin' bringing indulgence to everybody's day.</p>
           </div>
-          <div
-            class="bg-body shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
-          ></div>
         </div>
-        <div
-          class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
-        >
-          <div class="my-3 py-3">
-            <h2 class="display-5">Another headline</h2>
-            <p class="lead">And an even wittier subheading.</p>
+
+        <!-- Timeline Item 1 -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <img src="https://api.dunkin.com.ph/storage/uploads/story-timeline/2023-04-13/dunkinstory1-09-58-09-733116_15-12-02-307407.jpg" class="img-fluid rounded shadow" alt="Dunkin's first store in 1950">
           </div>
-          <div
-            class="bg-body shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
-          ></div>
+          <div class="col-md-6">
+            <h3 class="text-dunkin-pink">1950: Dunkin' is Born!</h3>
+            <p>Established by William Rosenberg in Massachusetts, USA, his aim was to serve "the freshest, most delicious coffee and donuts quickly and courteously in modern merchandised store." To this day, this remains true in every store.</p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6 order-md-2">
+            <img src="https://api.dunkin.com.ph/storage/uploads/story-timeline/2023-03-24/dunkinstory1-4_09-44-10-748523.jpg" class="img-fluid rounded shadow" alt="Dunkin' comes to the Philippines">
+          </div>
+          <div class="col-md-6 order-md-1">
+            <h3 class="text-dunkin-pink">1981: Dunkin' Comes to the Philippines</h3>
+            <p>Golden Donuts, Inc., the main local franchise holder in the Philippines, opened the first store in the country at Park Square, Makati City. It was an exciting day for everyone, as doughnuts back then were made by hand.</p>
+          </div>
+        </div>
+      </div>
+      <!-- ================================================================= -->
+      <!-- ABOUT US SECTION END                                              -->
+      <!-- ================================================================= -->
+
+
+      <!-- ================================================================= -->
+      <!-- FRANCHISE SECTION START                                           -->
+      <!-- ================================================================= -->
+      <div id="franchise" class="bg-body-tertiary py-5">
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col">
+              <h2 class="display-4">Become a Franchisee</h2>
+              <p class="lead text-muted">
+                Ready to own a piece of Dunkin' greatness? Simply write a Letter of Intent addressed to the Site Acquisition and Development Head stating the following information and email to
+                <a href="mailto:franchiseinquiry@goldendonuts.ph">franchiseinquiry@goldendonuts.ph</a>
+              </p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-6 col-lg-3 mb-4">
+              <h1 class="display-1 text-dunkin-pink fw-bold">1</h1>
+              <h4>Your Details</h4>
+              <p>Your professional and/or entrepreneurial details, either as an individual or a corporate entity.</p>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <h1 class="display-1 text-dunkin-orange fw-bold">2</h1>
+              <h4>Preferred Province</h4>
+              <p>Let us know your preferred province for the franchise location.</p>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <h1 class="display-1 text-dunkin-pink fw-bold">3</h1>
+              <h4>Why Dunkin'?</h4>
+              <p>Tell us why you chose Dunkin' and why your province is ready for our international brand.</p>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+              <h1 class="display-1 text-dunkin-orange fw-bold">4</h1>
+              <h4>Top Locations</h4>
+              <p>Mention the top cities or municipalities in your province which you believe we must penetrate first.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ================================================================= -->
+      <!-- FRANCHISE SECTION END                                             -->
+      <!-- ================================================================= -->
+
+
+      <!-- ================================================================= -->
+      <!-- CAREERS SECTION START                                             -->
+      <!-- ================================================================= -->
+      <div id="careers" class="container my-5">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="display-4">Join Our Team</h2>
+            <p class="lead text-muted">Let's work together by bringing delight to others. Check out the exciting opportunities at Dunkin'.</p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Job Opening 1 -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-dunkin-pink">Digital Sales Supervisor</h5>
+                <div class="my-2">
+                  <span class="badge bg-secondary me-2">Mandaluyong City</span>
+                  <span class="badge bg-secondary me-2">Full Time</span>
+                  <span class="badge bg-secondary">Marketing</span>
+                </div>
+                <p class="card-text small text-muted">Supervise and grow our digital sales channels to reach more customers online.</p>
+                <a href="#" class="btn btn-dunkin-orange mt-auto">Learn More & Apply</a>
+              </div>
+            </div>
+          </div>
+          <!-- Job Opening 2 -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-dunkin-pink">Electrical Engineer</h5>
+                <div class="my-2">
+                  <span class="badge bg-secondary me-2">Mandaluyong City</span>
+                  <span class="badge bg-secondary me-2">Full Time</span>
+                  <span class="badge bg-secondary">Engineering</span>
+                </div>
+                <p class="card-text small text-muted">Join our engineering team to maintain and improve our production facilities.</p>
+                <a href="#" class="btn btn-dunkin-orange mt-auto">Learn More & Apply</a>
+              </div>
+            </div>
+          </div>
+          <!-- Job Opening 3 -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-dunkin-pink">Data Analyst</h5>
+                <div class="my-2">
+                  <span class="badge bg-secondary me-2">Mandaluyong City</span>
+                  <span class="badge bg-secondary me-2">Full Time</span>
+                  <span class="badge bg-secondary">Information Technology</span>
+                </div>
+                <p class="card-text small text-muted">Analyze sales data and market trends to help us make better business decisions.</p>
+                <a href="#" class="btn btn-dunkin-orange mt-auto">Learn More & Apply</a>
+              </div>
+            </div>
+          </div>
+          <!-- Job Opening 4 -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-dunkin-pink">Service Crew</h5>
+                <div class="my-2">
+                  <span class="badge bg-secondary me-2">Various Locations</span>
+                  <span class="badge bg-secondary me-2">Full Time / Part Time</span>
+                  <span class="badge bg-secondary">Company Operation</span>
+                </div>
+                <p class="card-text small text-muted">Be the face of Dunkin'! Serve our customers with a smile and create delightful experiences.</p>
+                <a href="#" class="btn btn-dunkin-orange mt-auto">Learn More & Apply</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <footer class="container py-5">
       <div class="row">
         <div class="col-12 col-md">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="d-block mb-2"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <title>Product</title>
-            <circle cx="12" cy="12" r="10"></circle>
-            <path
-              d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"
-            ></path>
-          </svg>
+          <img src="../assets/img/logo.svg" class="bi" height="24" aria-hidden="true">
           <small class="d-block mb-3 text-body-secondary"
-            >&copy; 2017–2025</small
+            >&copy; 1950-2025</small
           >
         </div>
         <div class="col-6 col-md">
-          <h5>Features</h5>
+          <h5>Our Desserts</h5>
           <ul class="list-unstyled text-small">
             <li>
               <a class="link-secondary text-decoration-none" href="#"
-                >Cool stuff</a
+                >Donuts</a
               >
             </li>
             <li>
               <a class="link-secondary text-decoration-none" href="#"
-                >Random feature</a
+                >Beverages</a
               >
             </li>
             <li>
               <a class="link-secondary text-decoration-none" href="#"
-                >Team feature</a
+                >Cool Combos & Shareables</a
               >
             </li>
             <li>
               <a class="link-secondary text-decoration-none" href="#"
-                >Stuff for developers</a
+                >Bundles</a
               >
             </li>
             <li>
               <a class="link-secondary text-decoration-none" href="#"
-                >Another one</a
+                >Savory and Bakery</a
               >
             </li>
             <li>
               <a class="link-secondary text-decoration-none" href="#"
-                >Last time</a
+                >Grab and Go</a
               >
             </li>
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Resources</h5>
+          <h5>About us</h5>
           <ul class="list-unstyled text-small">
             <li>
               <a class="link-secondary text-decoration-none" href="#"
-                >Resource name</a
+                >The Dunkin Story</a
               >
             </li>
             <li>
               <a class="link-secondary text-decoration-none" href="#"
-                >Resource</a
+                >A dozen things you didn't know about DUNKIN'</a
               >
-            </li>
-            <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Another resource</a
-              >
-            </li>
-            <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Final resource</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Business</a
-              >
-            </li>
-            <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Education</a
-              >
-            </li>
-            <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Government</a
-              >
-            </li>
-            <li>
-              <a class="link-secondary text-decoration-none" href="#">Gaming</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li>
-              <a class="link-secondary text-decoration-none" href="#">Team</a>
-            </li>
-            <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Locations</a
-              >
-            </li>
-            <li>
-              <a class="link-secondary text-decoration-none" href="#"
-                >Privacy</a
-              >
-            </li>
-            <li>
-              <a class="link-secondary text-decoration-none" href="#">Terms</a>
             </li>
           </ul>
         </div>

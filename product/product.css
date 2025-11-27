@@ -1,5 +1,32 @@
+@font-face {
+    font-family: "Dunkin Sans Display";
+    src: url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.eot");
+    src: url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ac415bee855b42915c6fb198747e34ac.svg#Dunkin Sans Display")format("svg");
+}
+
+* {
+    font-family: "Dunkin Sans Display";
+}
+
+.display-3 {
+    font-size: 4rem;
+}
+
+.display-5, h5 {
+    color: #fe6e0d;
+}
+
 .container {
   max-width: 960px;
+}
+
+.icon-link {
+    color: white;
+    text-decoration: underline;
 }
 
 .icon-link > .bi {
@@ -10,7 +37,7 @@
 /*
  * Custom translucent site header
  */
-
+/* 
 .site-header {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -23,12 +50,12 @@
 .site-header a:hover {
   color: #fff;
   text-decoration: none;
-}
+} */
 
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */
-
+/* 
 .product-device {
   position: absolute;
   right: 10%;
@@ -57,7 +84,7 @@
   bottom: 0;
   left: 5%;
   background-color: #e5e5e5;
-}
+} */
 
 
 /*
